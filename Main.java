@@ -69,8 +69,11 @@ public class Main {
 
         //przygotowywanie zapytania dla api nbp
 
+        System.out.println("Podaj kod waluty");
         currency_tag = input.next();
+        System.out.println("Podaj datę początkową. Pamiętaj, że w weekendy NBP nie publikuje kursów walut.");
         start_date = input.next();
+        System.out.println("Podaj datę końcową.");
         end_date = input.next();
         api_link = makeLink(currency_tag, start_date, end_date);
 
